@@ -1,44 +1,103 @@
-<!-- Product 1 -->
-<div class="product-card">
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
-    <span class="badge">🔥 Best Seller</span>
+body{
+  background:#111;
+  color:#fff;
+}
 
-    <img src="1.jpg" alt="Premium Black Abaya">
+header{
+  text-align:center;
+  padding:30px 15px;
+  background:#000;
+}
 
-    <div class="product-info">
+header h1{
+  color:#f4c542;
+  font-size:40px;
+}
 
-        <h2>Premium Black Abaya</h2>
+header p{
+  color:#ddd;
+  margin-top:10px;
+}
 
-        <p class="code">Product Code: AB-001</p>
+.hero{
+  text-align:center;
+  padding:20px;
+}
 
-        <div class="price">
-            <span class="new-price">৳1500</span>
-            <span class="old-price">৳1800</span>
-        </div>
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+  padding:25px;
+}
 
-        <ul class="features">
-            <li>✔ Premium Dubai Nida Fabric</li>
-            <li>✔ Comfortable & Stylish</li>
-            <li>✔ Free Size</li>
-            <li>✔ Cash on Delivery</li>
-        </ul>
+.product{
+  background:#1d1d1d;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 0 15px rgba(255,215,0,.2);
+}
 
-        <div class="buttons">
+.product img{
+  width:100%;
+  display:block;
+}
 
-            <a href="https://wa.me/8801896219337?text=আমি%20Premium%20Black%20Abaya%20অর্ডার%20করতে%20চাই"
-               target="_blank"
-               class="btn whatsapp">
-               🟢 Order on WhatsApp
-            </a>
+.product h2{
+  padding:15px;
+  text-align:center;
+}
 
-            <a href="https://www.facebook.com/profile.php?id=61591251917312"
-               target="_blank"
-               class="btn facebook">
-               🔵 Facebook Page
-            </a>
+.product h3{
+  color:#f4c542;
+  text-align:center;
+  font-size:30px;
+}
 
-        </div>
+.product p{
+  text-align:center;
+  color:#ccc;
+  margin:10px;
+}
 
-    </div>
+.buttons{
+  padding:20px;
+}
 
-</div>
+.buttons button{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  color:white;
+  font-size:18px;
+  margin-bottom:12px;
+  cursor:pointer;
+}
+
+.order{
+  background:#25D366;
+}
+
+.facebook{
+  background:#1877F2;
+}
+
+.contact{
+  text-align:center;
+  padding:40px 20px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#000;
+  color:#aaa;
+}
